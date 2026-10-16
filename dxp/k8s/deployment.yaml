@@ -25,7 +25,7 @@ spec:
         effect: NoSchedule
       containers:
       - name: dxp-llm-service
-        image: harbor.dxp/dxp/dxp-llm-service:latest
+        image: harbor.harbor.svc.cluster.local/dxp/dxp-llm-service:a3fc228
         imagePullPolicy: Always
         envFrom:
         # S105 -- token renomme (etait PLACEHOLDER_DB_SECRET, majuscules
